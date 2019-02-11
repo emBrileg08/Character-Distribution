@@ -1,7 +1,7 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: emBrileg08
+Credit: stackoverflow.com for information on converting a string to lowercase
 
 Assignment:
 
@@ -36,3 +36,34 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+import string
+
+upper= str(input("Please enter a string of text (the bigger the better): "))
+lower= upper.lower()
+print('The distribution of characters in "'+ upper +'" is:')
+
+a=lower.count("a")
+b=lower.count("b")
+c=lower.count("c")
+d=lower.count("d")
+e=lower.count("e")
+f=lower.count("f")
+g=lower.count("g")
+h=lower.count("h")
+i=lower.count("i")
+j=lower.count("j")
+k=lower.count("k")
+l=lower.count("l")
+m=lower.count("m")
+n=lower.count("n")
+o=lower.count("o")
+p=lower.count("p")
+q=lower.count("q")
+r=lower.count("r")
+s=lower.count("s")
+t=lower.count("t")
+u=lower.count("u")
+v=lower.count("v")
+w=lower.count("w")
+x=lower.count("x")
+y
