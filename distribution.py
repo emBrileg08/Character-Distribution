@@ -42,28 +42,24 @@ upper= str(input("Please enter a string of text (the bigger the better): "))
 lower= upper.lower()
 print('The distribution of characters in "'+ upper +'" is:')
 
-a=lower.count("a")
-b=lower.count("b")
-c=lower.count("c")
-d=lower.count("d")
-e=lower.count("e")
-f=lower.count("f")
-g=lower.count("g")
-h=lower.count("h")
-i=lower.count("i")
-j=lower.count("j")
-k=lower.count("k")
-l=lower.count("l")
-m=lower.count("m")
-n=lower.count("n")
-o=lower.count("o")
-p=lower.count("p")
-q=lower.count("q")
-r=lower.count("r")
-s=lower.count("s")
-t=lower.count("t")
-u=lower.count("u")
-v=lower.count("v")
-w=lower.count("w")
-x=lower.count("x")
-y
+letters=list(string.ascii_lowercase)
+
+empty=[]
+for x in letters:
+    empty.append(lower.count(x))
+    
+#tuples=zip(letters,empty)
+#sortit=empty.sort()
+#sortwell=sortit[::-1]
+
+#print(sortwell)
+
+    
+#y=1
+
+#for x in range(0,25):
+    #if y<= empty[x]:
+        #print(letters[x])
+        #y+=1
+    
+
