@@ -48,11 +48,10 @@ empty=[]
 for x in letters:
     empty.append(lower.count(x))
     
-#tuples=zip(letters,empty)
-#sortit=empty.sort()
-#sortwell=sortit[::-1]
+tuples=zip(empty,letters)
+sortit=tuples.sort()
 
-#print(sortwell)
+print(list(sortit))
 
     
 #y=1
