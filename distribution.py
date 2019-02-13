@@ -38,7 +38,6 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 import string
-from operator import itemgetter
 
 upper= str(input("Please enter a string of text (the bigger the better): "))
 lower= upper.lower()
@@ -55,12 +54,6 @@ tuples=list(zip(empty, letters))
 def onlyfirst(thingy):
     return thingy[0]
 sortit=sorted(tuples, key=onlyfirst,reverse=True)
-
-def unzip:
-    
-
-print()
-
     
 #y=1
 
