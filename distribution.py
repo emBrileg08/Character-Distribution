@@ -2,6 +2,7 @@
 distribution.py
 Author: emBrileg08
 Credit: stackoverflow.com for information on converting a string to lowercase
+and information on how to sort a list of tuples by different criteria
 
 Assignment:
 
@@ -37,6 +38,7 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 import string
+from operator import itemgetter
 
 upper= str(input("Please enter a string of text (the bigger the better): "))
 lower= upper.lower()
@@ -48,10 +50,16 @@ empty=[]
 for x in letters:
     empty.append(lower.count(x))
     
-tuples=zip(empty,letters)
-sortit=tuples.sort()
+tuples=list(zip(empty, letters))
 
-print(list(sortit))
+def onlyfirst(thingy):
+    return thingy[0]
+sortit=sorted(tuples, key=onlyfirst,reverse=True)
+
+def unzip:
+    
+
+print()
 
     
 #y=1
@@ -60,5 +68,3 @@ print(list(sortit))
     #if y<= empty[x]:
         #print(letters[x])
         #y+=1
-    
-
