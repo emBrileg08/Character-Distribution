@@ -3,6 +3,8 @@ distribution.py
 Author: emBrileg08
 Credit: stackoverflow.com for information on converting a string to lowercase
 and information on how to sort a list of tuples by different criteria
+With input from Max Low, Mrs. Kono, and Maia Reynolds because I was discussing the program with me and they gave me some advice on "unzipping" my strings
+Emily Murphy informed me of the print(*) function to print something a certain number of times
 
 Assignment:
 
@@ -66,6 +68,8 @@ for x in range (0,25):
 y=1
 
 for x in range(0,25):
-   while y<= empty2[x]:
-        print(empty3[x])
-        y+=1
+   print(empty3[x]*empty2[x],end="")
+   print("")
+   #while y<= empty2[x]:
+        #print(empty3[x],end="")
+        #y+=1
