@@ -56,14 +56,16 @@ def onlyfirst(thingy):
 sortit=sorted(tuples, key=onlyfirst,reverse=True)
 
 empty2=[]
-for x in sortit:
-    empty2.append(sortit[x][0])
-    
-print(empty2)
-    
-#y=1
+for x in range(0,25):
+    empty2.append(int(sortit[x][0]))
 
-#for x in range(0,25):
-    #if y<= empty[x]:
-        #print(letters[x])
-        #y+=1
+empty3=[]
+for x in range (0,25):
+    empty3.append(sortit[x][1])
+    
+y=1
+
+for x in range(0,25):
+   while y<= empty2[x]:
+        print(empty3[x])
+        y+=1
