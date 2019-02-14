@@ -54,6 +54,12 @@ tuples=list(zip(empty, letters))
 def onlyfirst(thingy):
     return thingy[0]
 sortit=sorted(tuples, key=onlyfirst,reverse=True)
+
+empty2=[]
+for x in sortit:
+    empty2.append(sortit[x][0])
+    
+print(empty2)
     
 #y=1
 
