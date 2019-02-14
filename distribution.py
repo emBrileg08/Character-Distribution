@@ -70,6 +70,3 @@ y=1
 for x in range(0,25):
    print(empty3[x]*empty2[x],end="")
    print("")
-   #while y<= empty2[x]:
-        #print(empty3[x],end="")
-        #y+=1
